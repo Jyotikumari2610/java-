@@ -127,3 +127,21 @@ public class Arrays{
         }
          }
     }
+import java.util.*;
+public class Array{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of array:");
+        int size=sc.nextInt();
+        int num[]=new int[size];
+        System.out.println("Enter element of an array:");
+        for(int i=0;i<size;i++){
+            num[i]=sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+            if(num[i]%2==0){
+            System.out.println("Even no in array are:"+num[i]);
+        }
+        }
+    }
+}
