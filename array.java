@@ -19,17 +19,6 @@ public class ArrayExample {
     }
 }
 
-output 
-Output:
-
-Array elements:
-Element at index 0: 10
-Element at index 1: 20
-Element at index 2: 30
-Element at index 3: 40
-Element at index 4: 50
-Sum of all elements: 150
-
   import java.util.Arrays;
 
 public class SortArray {
@@ -48,7 +37,69 @@ public class SortArray {
         System.out.println("Sorted array (ascending): " + Arrays.toString(numbers));
     }
 }
-output 
-  Original array: [40, 10, 50, 30, 20]
-Sorted array (ascending): [10, 20, 30, 40, 50]
+import java.util.*;
+public class Arrays{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of an array:");
+        int size=sc.nextInt();
+        int arr[]=new int[size];
+        System.out.println("Enter elements of array:");
+        for(int i=0;i<size;i++){
+            arr[i]=sc.nextInt();
+        }
+      /*  for(int i=0;i<size;i++){
+    
+            if(arr[i]%2==0){
+            System.out.println("Sorted array is even numbers:" + (arr[i]));
+            }
+        else{
+            System.out.println("Sorted array is odd numbers:" + (arr[i]));
+            
+        }*/
+       /* for(int i=0;i<size;i++){
+                    if(arr[i]>0){
+            System.out.println("Enterd array is positive:"+arr[i]);
+        }
+        }
+        for(int i=0;i<size;i++){
+        if(arr[i]>0){
+            System.out.println("Enterd array is positive:"+arr[i]);
+        }
+        else{
+         System.out.println("Enterd array is negative:"+arr[i]);
+
+        }
+}*/
+for(int i=0;i<arr.length;i++){
+    int largest = arr[0];
+    int secondLargest = arr[0];
+    int smallest = arr[0];
+    int secondSmallest = arr[0];
+    for (int num : arr) //used to read elements from the given array
+         {
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+
+            if (num < smallest) {
+                secondSmallest = smallest;
+                smallest = num;
+            } else if (num < secondSmallest && num != smallest) {
+                secondSmallest = num;
+            }
+        }
+
+        if (largest == smallest) {
+            System.out.println("All elements are equal");
+        } else {
+            System.out.println("Second smallest: " + secondSmallest);
+            System.out.println("Second largest: " + secondLargest);
+        }
+    }
+    }
+}
 
