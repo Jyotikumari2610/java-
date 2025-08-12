@@ -60,3 +60,53 @@ public class Array{
     System.out.println(last_element);
 }
 }
+import java.util.*;
+public class Araay{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of an array:");
+        int size=sc.nextInt();
+        int num[]=new int[size];
+        System.out.println("Enter elements of array:");
+        for(int i=0;i<size;i++){
+            num[i]=sc.nextInt();
+        }
+//Input n elements in an array and display them in reverse order.
+      /*  System.out.println("reversed of each digit:");
+        for(int i=0;i<size;i++){
+            int original=num[i];
+            int rev=0;
+            while(original>0){
+                int digit =original%10;
+                rev=rev*10+digit;
+                original/=10;
+            }
+            System.out.println("reverse of"+num[i]+"is:"+rev);
+        }
+*/
+//Find the maximum and minimum element in an array
+/*int max=num[0];
+int min=num[0];
+for(int i=0;i<size;i++){
+    if(num[i]>max){
+        max=num[i];
+    }
+    else if(num[i]<min){
+        min=num[i];
+    }
+    else {
+        System.out.println("");
+    }
+}
+    System.out.println("The maximum number is:"+max);
+    System.out.println("The minimum number is:"+min);
+    */
+    //search for a given number x and print the index at which it occurs
+    System.out.println("enter new numbers:");
+    int x=sc.nextInt();
+    for(int i=0;i<size;i++){
+     if(num[i]==x){
+         System.out.println("x found at index:"+i);
+     }
+    }
+    }}
