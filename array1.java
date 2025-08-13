@@ -110,3 +110,36 @@ for(int i=0;i<size;i++){
      }
     }
     }}
+import java.util.*;
+public class Arrays{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of an array");
+        int size=sc.nextInt();
+       /* int arr1[]=new int [size];
+        int arr2[]=new int [size];
+        System.out.println("Enter elements of array:");
+        for(int i=0;i<size;i++){
+            arr1[i]=sc.nextInt();
+        }
+        for(int i=0;i<size;i++){
+         arr2[i]=arr1[i];
+        }
+    System.out.println("Copied array elements are:");
+    for(int i=0;i<size;i++){
+        System.out.println( arr2[i] +" " );
+    }*/
+   /* int arr[]=new int[size];
+    int sum=0;
+    for(int i=0;i<size;i++){
+        arr[i]=sc.nextInt();
+        sum+=arr[i];
+    }
+    System.out.println("Sum of array elements is:"+sum);
+    float average=sum/5;
+    System.out.println("average of array elements is:"+average);
+    */
+    
+    
+}
+}
