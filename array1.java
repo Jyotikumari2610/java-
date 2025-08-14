@@ -138,8 +138,33 @@ public class Arrays{
     System.out.println("Sum of array elements is:"+sum);
     float average=sum/5;
     System.out.println("average of array elements is:"+average);
-    */
-    
-    
+    */  
 }
+}
+import java.util.Scanner;
+
+public class Palindrome{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of an array:");
+        int size=sc.nextInt();
+        int arr[]=new int[size];
+        System.out.println("Enter elements of an array:");
+        for(int i=0;i<size;i++){
+            arr[i]=sc.nextInt();
+        }
+        boolean palindrome=true;
+        for(int i=0;i<size/2;i++){
+            if(arr[i]!=arr[size-1-i]){
+                palindrome=false;
+                break;
+            }
+        }
+        if(palindrome){
+            System.out.println("Palindrome!!");
+        }
+        else{
+            System.out.println("Not Palindrome!!");
+        }
+    }
 }
