@@ -15,8 +15,6 @@ public class TwoDArraySimple {
         }
     }
 }
-1 2 3 
-4 5 6
   import java.util.*;
 public class TwoDArrayExample {
     public static void main(String[] args) {
@@ -37,13 +35,50 @@ public class TwoDArrayExample {
         }
     }
 }
-Enter 6 numbers:
-78
-32
-45
-67
-89
-21
-2D array are:
-78 32 45 
-67 89 21 
+import java.util.*;
+public class Matrix{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int[][] mat1 = new int[2][2];
+        int[][] mat2 = new int[2][2];
+        int[][] sum = new int[2][2];
+        System.out.println("elements of first matrix:");
+        for (int i = 0; i <2; i++){
+            for (int j = 0; j <2; j++){
+                mat1[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Enter elements of second matrix:");
+        for (int i = 0; i <2; i++){
+            for (int j = 0; j <2; j++){
+                mat2[i][j] = sc.nextInt();
+            }
+        }
+   /*     for (int i = 0; i <2; i++){
+            for (int j = 0; j <2; j++){
+                sum[i][j] = mat1[i][j] + mat2[i][j];
+            }
+        }
+        System.out.println("Sum of the two matrices:");
+        for (int i = 0; i <2; i++){
+            for (int j = 0; j <2; j++){
+                System.out.print(sum[i][j] + " ");
+            }
+            System.out.println();
+        }*/
+        int[][] diff = new int[2][2];
+         for (int i = 0; i <2; i++){
+            for (int j = 0; j <2; j++){
+                diff[i][j] = mat1[i][j] - mat2[i][j];
+            }
+         }
+        System.out.println("Difference of the two matrices:");
+        for (int i = 0; i <2; i++){
+            for (int j = 0; j <2; j++){
+                System.out.print(diff[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
