@@ -1,4 +1,62 @@
 import java.util.*;
+public class TwoDArray{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+       /* int[][] numbers=new int[2][4];
+        System.out.println("Enter elements of numbers:");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<4;j++){
+                numbers[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("The Matrix formed is:");
+        for(int i=0;i<2;i++){
+            for(int j=0;j<4;j++){
+                System.out.print(numbers[i][j]+" ");
+            }
+            System.out.println();
+        }
+        */
+    /*    System.out.println("Enter no of rows and colums:");
+        int rows=sc.nextInt();
+        int columns=sc.nextInt();
+        int matrix[][]=new int [rows][columns];
+        System.out.println("Enter elements of the matrix:");
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<columns;j++){
+                matrix[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("Enter a random number x:");
+        int x=sc.nextInt();
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<columns;j++){
+                if(matrix[i][j]==x)
+                    System.out.println("x is found at:("+ i +"," + j +")");
+                
+            }
+        }
+        */
+        System.out.println("Enter no of rows and columns:");
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int num[][]=new int [n][m];
+        System.out.println("Enter elements of the matrix:");
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                num[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println("Transpose of given matrix:");
+        for(int j=0;j<m;j++){
+            for(int i=0;i<n;i++){
+                System.out.print(num[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+import java.util.*;
 public class TwoDArraySimple {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
