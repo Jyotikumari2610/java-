@@ -78,3 +78,45 @@ public static void main(String args[]){
     reversingNos(n);
 }  
 }
+import java.util.*;
+
+public class Practice {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of an array:");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter the elements of array:");
+        for(int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+     /*   int factorial = 1;
+        for(int i=0; i<arr.length; i++) {
+            factorial *= arr[i];
+        }
+        System.out.println("Product of array elements is: " + factorial);
+        */
+       /*   for (int i = 0; i < n; i++){
+            int num = arr[i], j;
+            for (j = 2; j < num; j++)
+                if (num % j == 0) 
+                break;
+            if (num>=1 && j==num) 
+            System.out.print("Prime nos are:-"+num + " ");
+    } */
+     for(int i=0;i<n;i++){
+            if(arr[i]>0){
+            System.out.println("Enterd array is positive:"+arr[i]);
+        }
+        }
+        for(int i=0;i<n;i++){
+        if(arr[i]>0){
+            System.out.println("Enterd array is positive:"+arr[i]);
+        }
+        else{
+            System.out.println("Enterd array is negative:"+arr[i]);
+        }
+    }
+}
+}
+
