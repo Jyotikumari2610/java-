@@ -119,4 +119,54 @@ public class Practice {
     }
 }
 }
+import java.util.*;
+public class Practice{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+    /*    System.out.println("Enter principal amount in rupess:");
+        int p=sc.nextInt();
+        System.out.println("Enter rate of interest per anum:");
+        float r=sc.nextFloat();
+        System.out.println("Enter time in years:");
+        float t=sc.nextFloat();
+        float SI=0;
+        SI=(p*r*t)/100;
+        System.out.println("Simple interest is: "+SI);
+        */
+     /*   System.out.println(".....Temperature Converter.....");
+        System.out.println("1.Degree Celsius to Fahrenheit!!");
+        System.out.println("2.Fahrenheit to Celsius!!");
+        System.out.print("Enter your choice (1 or 2): ");
+        int choice = sc.nextInt();
+        if(choice==1){
+            System.out.print("Enter temperature in celsius:");
+            float celsius=sc.nextFloat();
+            float fahrenheit=(celsius*1.8f)+32;
+            System.out.println(+celsius+" celsius is "+fahrenheit+" in fahrenheit");
+        }
+        else if(choice==2){
+            System.out.print("Enter temperature in Fahrenheit:");
+            float fahrenheit=sc.nextFloat();
+            float celsius=(fahrenheit-32)/1.8f;
+            System.out.println(+fahrenheit+" fahrenheit is "+celsius+" in Celsius");
+        }
+        else{
+            System.out.println("Invalid character!!");
+        }
+        */
+        System.out.println("Enter a word:");
+        String word=sc.nextLine();
+        int n = 0;
+        word= word.toLowerCase();
 
+        for(int i = 0; i < word.length(); i++) {
+            char ch =word.charAt(i);
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {
+                n++;
+            }
+        }
+        System.out.println("Number of vowels in the string: " +n);
+
+        
+    }
+}
