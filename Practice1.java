@@ -79,3 +79,42 @@ if_else_if practice questions
         }
     }
 }
+import java.util.*;
+public class Functions{
+ /*   public static int sumofOdd(int n){
+        int sum=0;
+        for(int i=0;i<n;i++){
+            if(i%2!=0){
+            sum+=i;
+            }
+        }
+         System.out.println(sum);
+        return sum;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n=sc.nextInt();
+        System.out.println(sumofOdd(n));
+    } */
+    public static int sumofEven(int n){
+        int sum=0;
+        int difference=0;
+        for(int i=0;i<n;i++){
+            if(i%2==0){
+            sum+=i;
+            difference-=i;
+            }
+        }
+        System.out.println(sum);
+         System.out.println(difference);
+         return 1;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n=sc.nextInt();
+        System.out.println(sumofEven(n));
+    }
+ }
+
