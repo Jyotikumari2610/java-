@@ -170,3 +170,32 @@ public class Practice{
         
     }
 }
+import java.util.*;
+public class Practice{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of an array:");
+        int n=sc.nextInt();
+        int arr1[]=new int[n];
+        int arr2[]=new int[n];
+        System.out.println("Enter element of 1st array:");
+        for(int i=0;i<n;i++){
+            arr1[i]=sc.nextInt();
+        }
+         System.out.println("Enter element of 2nd array:");
+        for(int i=0;i<n;i++){
+            arr2[i]=sc.nextInt();
+        }
+        System.out.println("equal elements in both array are:");
+       int equal=0;
+        for(int i=0;i<n;i++){
+        for(int j = 0; j < n; j++) {
+                if(arr1[i]==arr2[j]){
+                    System.out.print(arr1[i] + " ");
+                    equal++;
+                }
+            }
+        }
+        System.out.println("nTotal common elements: "+ equal);
+    }
+}
