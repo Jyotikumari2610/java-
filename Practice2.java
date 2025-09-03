@@ -98,3 +98,25 @@ public class Factorial{
         System.out.println(factorial);
     }
 }
+//ncr using functions
+import java.util.*;
+public class Main {
+    public static int Pcr(int n,int r){
+        int fact=1;
+        for(int i=0;i<r;i++){
+        fact*=(n-i);
+      }
+         int nfact=1;
+          for(int i=1;i<=r;i++){
+           nfact*=i;
+        }
+        return fact/nfact;
+         }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two number:");
+        int n=sc.nextInt();
+        int r=sc.nextInt();
+        System.out.println(Pcr(n,r));
+    }
+}
