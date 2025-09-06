@@ -83,3 +83,33 @@ public class main{
        System.out.println("LCM of array is:"+lcm);
 }
 }
+//probability question code
+import java.util.*;
+public class  Probability{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+      /*  System.out.println("Enter total no of outcomes is :");
+        int n=sc.nextInt();
+        System.out.println("Enter no of favorable outcomes:");
+        int m=sc.nextInt();
+        double prob=1;
+        prob=(double)m/n;
+        System.out.println("probability of given question is:"+prob);
+    */
+    
+        System.out.print("Enter total possible outcomes: ");
+        int total= sc.nextInt();
+
+        System.out.print("Enter favorable outcomes: ");
+        int favorable= sc.nextInt();
+        if (total<=0) {
+            System.out.println("Total outcomes must be greater than 0!");
+        }
+        if (favorable<0 || favorable>total) {
+            System.out.println("Favorable outcomes must be between 0 and " + total);
+        }
+        double prob = (double) favorable/total;
+        System.out.println("The probability of the event is: " + prob);
+        System.out.println("The probability of NOT the event is: " + (1 - prob));
+    }
+}
