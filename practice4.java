@@ -113,3 +113,80 @@ public class  Probability{
         System.out.println("The probability of NOT the event is: " + (1 - prob));
     }
 }
+import java.util.*;
+public class Practice{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        int m=in.nextInt();
+        int n=in.nextInt();
+        while(m!=n){
+        if(m>n){
+            m=m-n;
+        }
+        else {
+            n=n-m;
+        }}
+        System.out.println("GCD is: "+n);
+    }
+}
+import java.util.*;
+
+
+public class Solutions {
+   public static void main(String args[]) {
+       Scanner sc = new Scanner(System.in);
+       int n = sc.nextInt();
+      
+       int a = 0, b = 1;
+          
+       System.out.print(a+" ");
+      
+       if(n > 1) {
+           //find nth term
+           for(int i=2; i<=n; i++) {
+               System.out.print(b+" ");
+               //the concept below is called swapping
+               int temp = b;
+               b = a + b;
+               a = temp;
+           }
+
+
+           System.out.println();
+       }
+   }   
+}
+import java.util.*;
+
+
+public class Arrays {
+   public static void main(String args[]) {
+      Scanner sc = new Scanner(System.in);
+      int size = sc.nextInt();
+      int numbers[] = new int[size];
+
+
+      //input
+      for(int i=0; i<size; i++) {
+          numbers[i] = sc.nextInt();
+      }
+
+
+      int max = Integer.MIN_VALUE;
+      int min = Integer.MAX_VALUE;
+     
+       for(int i=0; i<numbers.length; i++) {
+           if(numbers[i] < min) {
+               min = numbers[i];
+           }
+           if(numbers[i] > max) {
+               max = numbers[i];
+           }
+       }
+
+
+       System.out.println("Largest number is : " + max);
+       System.out.println("Smallest number is : " + min);
+      
+   }
+}
