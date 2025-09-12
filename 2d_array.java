@@ -140,3 +140,40 @@ public class Matrix{
         }
     }
 }
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter row and columns:");
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int num[][]=new int[n][m];
+        System.out.println("Enter elements of array");
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                num[i][j]=sc.nextInt();
+            }
+        }
+  /*       for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                System.out.print(num[i][j]+" ");
+        }
+        System.out.println();
+    }*/
+    
+   /* System.out.println("Enter a number:");
+    int x=sc.nextInt();
+     for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(num[i][j]==x)
+        System.out.println( +x+ "is found at: ("+i+","+j+")");
+            }
+    } */
+     for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                System.out.print(num[j][i]+" ");
+            }
+            System.out.println();
+     }
+}
+}
