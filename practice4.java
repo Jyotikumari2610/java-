@@ -190,3 +190,23 @@ public class Arrays {
       
    }
 }
+import java.util.*;
+public class Main{
+    public static void No(int n){
+        int sum=0;
+        int diff=0;
+        int product =1;
+        for(int i=1;i<=n;i++){
+            sum+=i;
+            diff-=i;
+        }
+        System.out.println("Sum of N no is:"+sum);
+        System.out.println("Difference of N no is:"+diff);
+    }
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter a number:");
+    int n=sc.nextInt();
+    No(n);
+}
+}
