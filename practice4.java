@@ -210,3 +210,27 @@ public class Main{
     No(n);
 }
 }
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of an array:");
+        int size=sc.nextInt();
+        int num[]=new int[size];
+        System.out.println("Enter elements of array:");
+        for(int i=0;i<size;i++){
+            num[i]=sc.nextInt();
+        }
+         int start=num[0];
+        int end=num.length -1;
+        while(start<end){
+            int temp = num[start];
+            num[start] = num[end];
+            num[end] = temp;
+            start++;
+            end--;
+        }
+       System.out.println("Reversed array is: " + Arrays.toString(num));
+
+    }
+}
