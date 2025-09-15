@@ -42,3 +42,52 @@ public class Strings {
        System.out.println(sb);
     }
 }
+import java.util.Scanner;
+public class CountVowels{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine().toLowerCase();
+        int count=0;
+      for (int i=0; i < str.length(); i++){
+            char c=str.charAt(i);
+            if (c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+                count++;
+            }
+        }
+     System.out.println("Number of vowels: " + count);
+    }
+}
+import java.util.Scanner;
+ public class SumMethod{
+    static int sum(int a, int b){
+        return a + b;
+    }
+   public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter second number: ");
+        int num2 = sc.nextInt();
+        int result = sum(num1, num2);
+        System.out.println("Sum = " + result);
+    }
+}
+class Student {
+    String name;
+    int age;
+  Student(String n, int a){
+        name = n;
+        age = a;
+    }
+ void display(){
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+public class StudentTest{
+    public static void main(String[] args) {
+        Student s1 = new Student("Jyoti", 19);
+        s1.display();
+    }
+}
