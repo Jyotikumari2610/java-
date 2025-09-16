@@ -90,3 +90,36 @@ import java.util.*;
             while(true);
     }
 }
+import java.util.*;
+public class Practice{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of an array:");
+        int size=sc.nextInt();
+        int num[]=new int[size];
+        System.out.println("Enter elements in array:");
+        for(int i=0;i<size;i++){
+            num[i]=sc.nextInt();
+        }
+        System.out.println("First elements:"+num[0]);
+        System.out.println("Last elements:"+num[size-1]);
+        for(int i=0, j=size-1;i<j;i++,j--){
+                int temp=num[i];
+                num[i]=num[j];
+                num[j]=temp;
+            }
+        System.out.println("Reversed array"+ Arrays.toString(num));
+        boolean found=false;
+        for(int i=0;i<size;i++){
+         if(num[i]<0){
+             System.out.println("First negative integer at index"+i);
+             found=true;
+             break;
+         }  
+        }
+         if(!found)
+             System.out.println("No Negative integers");
+         
+       }
+    }
+
