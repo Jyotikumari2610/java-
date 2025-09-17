@@ -61,3 +61,24 @@ output
 }
 output
   2 4 6 8 10 12 14 
+import java.util.*;
+public class Welcome2{
+        public static void main(String args[]){
+
+                Scanner sc=new Scanner(System.in);
+
+                /*for(;;){
+                        System.out.println("Apni Kaksha");
+                }*/
+                /*System.out.println("Enter a number:");
+                int n=sc.nextInt();
+                for (int i=0;i<n;i++){
+                        if(n%2==0)
+                                System.out.println("Even Numbers");
+                }*/
+                System.out.println("Enter a number:");
+                int n=sc.nextInt();
+                System.out.println("Even numbers till"+n+"are:");
+                for(int i=2;i<=n;i+=2){
+                        System.out.println(i);
+                } 
