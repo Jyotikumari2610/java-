@@ -205,3 +205,37 @@ public class Array{
         System.out.println("Smallest number = " + min);
     }
 }
+import java.util.*;
+public class Practice{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of an array:");
+        int size =sc.nextInt();
+        int arr[]=new int[size];
+        System.out.println("Enter elements of an array:");
+        for(int i=0;i<arr.length;i++){
+        arr[i]=sc.nextInt();
+        }
+      /*  //Second largest element
+         int largest=arr[0];
+         int second_largest=Integer.MIN_VALUE;
+        for(int i=0;i<size;i++){
+         if(arr[i]>largest){
+             second_largest=largest;
+             largest=arr[i];
+             System.out.println("Second largest element is:"+second_largest);
+            }
+        } */
+      //Second smallest element
+        int smallest=arr[0];
+        int second_smallest=Integer.MIN_VALUE;
+        for(int i=0;i<size;i++){
+            if(arr[i]<smallest){
+                second_smallest=smallest;
+                smallest=arr[i];
+                System.out.println("Second largest elements is:"+second_smallest);
+            }
+        } 
+        
+    }
+}
