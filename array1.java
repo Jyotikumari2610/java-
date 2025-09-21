@@ -199,3 +199,60 @@ public class ArrayOperations {
         
     }
 }
+import java.util.*;
+public class RemoveDuplicatesNoSort{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int temp[] = new int[n]; 
+        int j = 0;
+        for(int i = 0; i < n; i++){
+            boolean isDuplicate = false;
+            for (int k = 0; k < j; k++){
+                if(arr[i] == temp[k]){
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if(!isDuplicate){
+                temp[j++] = arr[i]; 
+            }
+        }
+        System.out.println("Array after removing duplicates (no sorting):");
+        for(int i = 0; i < j; i++){
+            System.out.print(temp[i] + " ");
+        }
+    }
+}
+import java.util.*;
+public class UniqueElementsArray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Unique elements are:");
+        for (int i = 0; i < n; i++) {
+            boolean isUnique = true;
+            for (int j = 0; j < n; j++) {
+                if (i != j && arr[i] == arr[j]) {
+                    isUnique = false;
+                    break;
+                }
+            }
+            if (isUnique) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+    }
+}
