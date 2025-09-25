@@ -90,3 +90,34 @@ public class PalindromeString{
 }
     }
 
+import java.util.*;
+public class Practice{
+public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+  /*  System.out.println("Enter a number:");
+    int n=sc.nextInt();
+    for(int i=0;i<n;i++){
+        System.out.println(i);
+    }
+    int x=sc.nextInt();
+    for(int i=0;i<=n;i++){
+        if(x==i){
+             System.out.println(+x+ "is at index: "+i);
+        }
+    } */
+  /*  System.out.println("Enter a String:");
+    String str=sc.nextLine();
+    for(int i=0;i<str.length();i++){
+         char ch = str.charAt(i);
+    if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+        System.out.println(ch + " is a vowel");
+       System.out.println(i);
+    }
+    }*/
+     System.out.println("Enter a String:");
+    String str=sc.nextLine();
+    System.out.println("First Character: " + str.charAt(0));
+    System.out.println("Last Character: " + str.charAt(str.length() - 1));
+    
+}  
+}
