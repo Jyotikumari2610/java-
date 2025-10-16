@@ -96,3 +96,92 @@ public class Anagram {
             System.out.println("Not an Anagram!");
     }
 }
+import java.util.*;
+class Solution {
+    public static int[] decrementArrayElements(int[] arr) {
+        // Code here
+        int result[]=new int[arr.length];
+        for(int i=0;i<arr.length;i++){
+            result[i]=arr[i]-1;
+        }
+       
+       return  result;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+       decrementArrayElements(arr);
+    }
+}
+import java .util.*;
+class Solution {
+    public static int largest(int[] arr) {
+        // code here
+        int max=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(max<arr[i])
+            max=arr[i];
+        }
+    return max;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        Solution obj=new Solution();
+        obj.largest(arr);
+    }
+}
+class Solution {
+    public static int arraySum(int[] arr) {
+        // code here
+        int sum=0;
+        for(int i=0;i<arr.length;i++){
+            sum+=arr[i];
+        }
+        return sum;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        Solution obj=new Solution();
+        obj.arraySum(arr);
+    }
+}
+import java.util.*;
+class Solution {
+    public static double posAverage(int[] arr) {
+        // Code here
+        int sum=0;
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>0){
+            sum+=arr[i];
+            count++;
+            }
+        }
+        if (count==0)  return 0;
+       return (double)sum/count;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        Solution obj=new Solution();
+        double result=obj.posAverage(arr);
+    }
+}
