@@ -185,3 +185,150 @@ class Solution {
         double result=obj.posAverage(arr);
     }
 }
+import java.util.*;
+class Solution {
+    public static void printPrimeFactorization(int n) {
+        // code here
+        for(int i=2;i<=n;i++){
+            while(n%i==0){
+                System.out.print(i+" ");
+                n/=i;
+            }
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+       printPrimeFactorization(n);
+    }
+}
+
+import java.util.*;
+class Solution {
+    public static int firstDigit(int n) {
+        // code here
+       while(n>=10){
+           n/=10;
+       }
+       return n;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        firstDigit(n);
+    }
+}
+import java.util.*;
+class Solution {
+    public static String sliceString(String s) {
+        // code here
+       if(s.length()<=2){
+           return " ";
+       }
+        return s.substring(1,s.length()-1);
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        Solution obj=new Solution();
+        obj.sliceString(s);
+    }
+}
+
+import java.util.*;
+class Solution {
+    public static void changeCase(String s) {
+        // code here
+       s=s.substring(0,1).toUpperCase()+s.substring(1);
+       System.out.println(s);
+      System.out.println(s.toUpperCase());
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        changeCase(s);
+    }
+}
+import java.util.*;
+class Solution {
+    public static boolean isPanagram(String str) {
+        // Your code here
+        boolean isPanagram=str.toLowerCase().chars().filter(Character::isLetter).distinct().count()==26;
+        return isPanagram;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        Solution obj=new Solution();
+        obj.isPanagram(str);
+    }
+}
+// User function Template for Java
+import java.util.*;
+class Solution {
+    public static char extraChar(String s1, String s2) {
+        // write your code here
+       char ans=0;
+       for(char ch:(s1+s2).toCharArray()){
+           ans^=ch;
+       }
+       return ans;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.nextLine();
+        String s2=sc.nextLine();
+        Solution obj=new Solution();
+        obj.extraChar(s1,s2);
+    }
+}
+import java.util.*;
+class Solution {
+    public static boolean areAnagrams(String s1, String s2) {
+        // code here
+        char[] a=s1.toCharArray();
+        char[] b=s2.toCharArray();
+        Arrays.sort(a);
+        Arrays.sort(b);
+       if(Arrays.equals(a,b)){
+           return true;
+       }
+       return false;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.nextLine();
+        String s2=sc.nextLine();
+        Solution obj=new Solution();
+        obj.areAnagrams(s1,s2);
+    }
+}
+import java.util.*;
+class Solution {
+    public static boolean isPalindrome(String s) {
+        // code here
+        s=s.toLowerCase();
+        String rev=new StringBuilder(s).reverse().toString();
+        return s.equals(rev);
+        }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        Solution obj=new Solution();
+        obj.isPalindrome(s);
+    }
+}
+class Solution {
+    public static String reverseString(String s) {
+        // code here
+        String rev=new StringBuilder(s).reverse().toString();
+        return rev;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        Solution obj=new Solution();
+        obj.reverseString(s);
+    }
+}
+
