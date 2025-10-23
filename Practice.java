@@ -91,4 +91,47 @@ public class PrimeNumber {
         return fibonacci(n - 1) + fibonacci(n - 2);
             }
  }
+import java.util.*;
+public class Solution{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+      /*  for(int i=2;i<=n;i++){
+            while(n%i==0){
+            System.out.print(i+" ");
+            n/=i;
+            }
+        }*/
+  int arr[]=new int[n];
+    for(int i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+    }
+/*    for(int i=n-1;i>=0;i--){
+        System.out.println(arr[i]);
+    }*/
+ /*   boolean asc=true;
+    boolean dsc=true;
+    for(int i=0;i<n-1;i++){
+        if(arr[i]<arr[i+1]){
+        dsc=false;
+    }
+    else if(arr[1]>arr[i+1]){
+        asc=false;
+    }
+}
+    System.out.println("Descending " +dsc);
+    System.out.println("Ascending "+asc);
+    */
+    int sum=0;
+    int count=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]>0){
+            sum+=arr[i];
+            count++;
+        }
+    }
+    float average=(float)sum/count;
+    System.out.println(average);
+  }
+}
 
