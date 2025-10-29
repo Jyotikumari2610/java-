@@ -62,3 +62,16 @@ class StackLinkedList {
         stack.pop(); 
     }
 }
+import java.util.*;
+public class Solution{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s1=sc.nextLine();
+        String s2=sc.nextLine();
+        char ans=0;
+        for(char ch:(s1+s2).toCharArray()){
+            ans^=ch;
+        }
+        System.out.println(ans);
+    }
+}
