@@ -161,3 +161,58 @@ public class main{
         System.out.println(z);
     }
 }
+import java.util.*;
+public class Solution{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+      /*  int a=sc.nextInt();
+        int b=sc.nextInt();
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println(a);
+        System.out.println(b);
+        */
+    /*  int base=sc.nextInt();
+       int exp=sc.nextInt();
+      int result=1;
+        for(int i=0;i<exp;i++){
+            result*=base;
+        }
+        System.out.println(result);
+        //find power by using math.pow command
+        int result = (int)Math.pow(base, exp);
+        System.out.println(result);
+        */
+   /*    int year=sc.nextInt();
+       if(year%4==0){
+           System.out.println(+year+" is Leap Year!!");
+       }
+       else {
+           System.out.println(+year+" is not a leap year");
+       }
+       */
+    /*   int n=sc.nextInt();
+       int temp=n;
+       int sum=0;
+       while(temp>0){
+       int r=temp%10; 
+       sum=sum+r*r*r; 
+       temp=temp/10;
+       }
+       System.out.println(sum==n ? "Armstrong" : "Not Armstrong");
+*/
+     /*   char ch=sc.next().charAt(0);  
+        int ascii=ch;
+        System.out.println("The ASCII value of "+ch+" is: "+ascii);
+       */
+       int a=20,b=8;  
+       while(b!=0){
+        int temp=b; 
+        b=a%b; 
+        a=temp;
+       }
+       System.out.println("GCD = "+a);
+
+    }
+}
