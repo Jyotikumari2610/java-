@@ -134,4 +134,54 @@ public class Solution{
     System.out.println(average);
   }
 }
+import java.util.*;
+class Solution {
+    static String revStr(String s) {
+        String rev = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            rev = rev + s.charAt(i);
+        }
+        return rev;
+    }
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(revStr(s));
+    }
+}
+import java.util.*;
+public class Main {
+    public static double area(int choice, double[] arr) {
+        double result = 0;
+        if (choice == 1) { 
+            double R = arr[0];
+            result = Math.PI * R * R;
+        } 
+        else if (choice == 2) { // Rectangle
+            double L = arr[0];
+            double B = arr[1];
+            result = L * B;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice = sc.nextInt(); 
+        if (choice == 1) {
+            double R = sc.nextDouble();
+            double[] arr = {R};
+            System.out.println(area(choice, arr));
+        } 
+        else if (choice == 2) {
+            double L = sc.nextDouble();
+            double B = sc.nextDouble();
+            double[] arr = {L, B};
+            System.out.println(area(choice, arr));
+        } 
+        else {
+            System.out.println("Invalid choice!");
+        }   
+    }
+}
+
 
