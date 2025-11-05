@@ -105,6 +105,23 @@ public static void main(String args[]){
              System.out.println(+x+ "is at index: "+i);
         }
     } */
+    import java.util.*;
+class Solution {
+    static String revStr(String s) {
+        // code here
+        String rev=" ";
+        for(int i=s.length()-1;i>=0;i--){
+            rev=rev + s.charAt(i)
+        }
+        return rev;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner (System.in);
+        String s=sc.nextLine();
+        Solution obj=new Solution(System.in);
+        obj.revStr(s);
+    }
+}
   /*  System.out.println("Enter a String:");
     String str=sc.nextLine();
     for(int i=0;i<str.length();i++){
