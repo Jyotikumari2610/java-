@@ -75,5 +75,65 @@ public class Solution {
         sol.utility(scn);
     }
 }
+import java.util.*;
+public class Calculator {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+    public static int subtract(int a, int b) {
+        return a - b;
+    }
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+    public static double divide(int a, int b) {
+        if (b == 0) {
+            System.out.println("Error: Division by zero not allowed.");
+            return 0;
+        }
+        return (double)a / b;
+    }
+    public static void menu() {
+        System.out.println("\n***** CALCULATOR MENU *****");
+        System.out.println("1. ADD");
+        System.out.println("2. SUBTRACT");
+        System.out.println("3. MULTIPLY");
+        System.out.println("4. DIVIDE");
+        System.out.println("5. EXIT");
+        System.out.print("Enter your choice: ");
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+ while (true) {
+            menu();
+            choice = sc.nextInt(); 
+     if (choice == 5) {
+                System.out.println("Exiting program...");
+                break;
+            }
+            System.out.print("Enter first number: ");
+            int num1 = sc.nextInt();
+            System.out.print("Enter second number: ");
+            int num2 = sc.nextInt();
+         switch (choice) {
+                case 1:
+                    System.out.println("Result = " + add(num1, num2));
+                    break;
+                case 2:
+                    System.out.println("Result = " + subtract(num1, num2));
+                    break;
+                case 3:
+                    System.out.println("Result = " + multiply(num1, num2));
+                    break;
+                case 4:
+                    System.out.println("Result = " + divide(num1, num2));
+                    break;
+                default:
+                    System.out.println("Invalid choice! Please enter again.");
+            }
+        }
+    }
+}
 
 
