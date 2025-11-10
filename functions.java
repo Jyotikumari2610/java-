@@ -135,5 +135,87 @@ public class Calculator {
         }
     }
 }
+import java.util.*;
+class Solution {
+    public int lastDigit(int n) {
+        // Code here
+            n=n%10;
+            return n;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        Solution obj=new Solution();
+        obj.lastDigit(n);
+    }
+}
+import java.util.*;
+class Solution {
+    public static void utility(String s) {
+        // code here
+        for(int i=0;i<s.length();i++){
+            if(i%2==0)
+            System.out.print(s.charAt(i));
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        Solution obj=new Solution();
+        obj.utility(s);
+    }
+}
+// User function Template for Java
+import java.util.*;
+class Solution {
+    public static String utility(int number) {
+        // write your code here
+        switch(number){
+            case 1:
+                return "One";
+            case 2:
+                return "Two";
+            case 3:
+                return "Three";
+            case 4:
+                return "Four";
+            case 5:
+                return "Five";
+            case 6:
+                return "Six";
+            case 7:
+                return "Seven";
+            case 8:
+                return "Eight";
+            case 9:
+                return "Nine";
+            default:
+                return "Unknown";
+    }
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int number=sc.nextInt();
+        Solution obj=new Solution();
+        obj.utility(number);
+    }
+}
+// User function Template for Java
+import java.util.*;
+class Solution {
+    public static String utility(int n) {
 
+        // write your code here
+        if(n%2==1)
+            return "You";
+        else
+        return "Friend";
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        Solution obj=new Solution();
+        obj.utility(n);
+    }
+}
 
