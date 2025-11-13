@@ -218,4 +218,45 @@ class Solution {
         obj.utility(n);
     }
 }
+//Back-end complete function Template for Java
+import java.util.Scanner;
+
+public class Solution {
+    public static void solve() {
+        Scanner scn = new Scanner(System.in);
+        int a = scn.nextInt();
+        int b = scn.nextInt();
+        int c = scn.nextInt();
+        int e=scn.nextInt();
+        // Perform all the operations and print in a single line
+        int d=a^a;
+        e=c^b;
+        int f=c|(a^a);
+        e=~e;
+        int g = a & b;
+        System.out.println(d + "\n" + e + "\n" + f + "\n" + g + "\n" + e);
+    }
+    public static void main(String args[]){
+        Solution obj=new Solution();
+        obj.solve();
+    }
+}
+import java.util.*;
+class Solution {
+    public int countDigits(int n) {
+        // code here
+        int count =0;
+        while(n!=0){
+            n=n/10;
+            count++;
+        }
+        return count;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        Solution obj=new Solution();
+        obj.countDigits(n);
+    }
+}
 
