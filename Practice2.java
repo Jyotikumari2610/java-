@@ -241,3 +241,85 @@ public class Main {
         }
         System.out.println();
       } 
+/*import java.util.*;
+public class Solution {
+    public static void utility(Scanner scn) {
+        String a = scn.nextLine();
+        String b = scn.nextLine();
+        String separator = scn.nextLine();
+        // print with seperator
+        separator=separator.replace(" ","@");
+        System.out.println(separator);
+    }
+    public static void main(String args[]){
+        Scanner scn=new Scanner(System.in);
+        utility(scn);
+    }
+}
+*/
+/*import java.util.*;
+class Solution {
+    public static void utility(int x) {
+        // code here
+        while(x>=0){
+            System.out.println(x);
+        }
+        x--;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        Solution obj=new Solution();
+        obj.utility(x);
+    }
+}
+*/
+/*import java.util.*;
+class Solution {
+    public static void difference(int n1) {
+        // Write your code here
+        int table=0;
+        for(int i=1;i<=10;i++){
+            table=n1*i;
+        System.out.println(table);
+        }
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        difference(n1);
+}
+}
+*/
+// User function Template for Java
+import java.util.*;
+class Solution {
+    public static void difference(int n1, int n2) {
+        // Write your code here
+        int table1=0;
+        for(int i=1;i<=10;i++){
+            table1=n1*i;
+        }
+        int table2=0;
+        for(int i=1;i<=10;i++){
+            table2=n2*i;
+        }
+        for(int i=1;i<=10;i++){
+        if(n1>n2){
+            System.out.println(table1-table2);
+        }
+        else{
+            System.out.println(table2-table1);
+        }
+        }
+        
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        Solution obj=new Solution();
+        obj.difference(n1,n2);
+    }
+}
+     
