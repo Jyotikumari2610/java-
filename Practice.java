@@ -184,4 +184,63 @@ public class Main {
     }
 }
 
+import java.util.*;
+
+public class Solution {
+    public static void main(String args[]) {
+        // Your code here
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a>b && a>c){
+            System.out.println(a);
+        }
+        else if(b>a && b>c){
+            System.out.println(b);
+        }
+        else {
+            System.out.println(c);
+        }
+    }
+}
+// User function Template for Java
+import java.util.*;
+class Solution {
+    public static int gcd(int a, int b) {
+        while(b!=0){
+            int temp=b;
+            b=a%b;
+            a=temp;
+        }
+        return a;
+        // code here to calculate and return gcd of a and b
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Solution obj=new Solution();
+        obj.gcd(a,b);
+    }
+}
+import java.util.*;
+class Solution {
+    public static int findPattern(String s, String p) {
+        // code here
+        for(int i=0;i<s.length();i++){
+            if(s.contains(p))
+           System.out.println(i);
+        }
+     return -1;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String p=sc.nextLine();
+        Solution obj=new Solution();
+        obj.findPattern(s,p);
+    }
+}
+
 
