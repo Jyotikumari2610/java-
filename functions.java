@@ -2,6 +2,7 @@ import java.util.*;
 public class Solution {
     public String average(int arr[],int n) {
         // code here
+        
         int sum=0;
         for(int i=0;i<n;i++){
             sum+=arr[i];
