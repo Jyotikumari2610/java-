@@ -234,3 +234,59 @@ class Main {
 
     }
 }
+class Solution {
+    public ArrayList<Integer> findMajority(int[] arr) {
+        // Code here
+        int n=arr.length;
+        ArrayList<Integer> res=new AraayList<Integer>();
+        for(int i=0;i<n;i++){
+            int cnt=0;
+            for(int j=i;j<n;j++){
+                if(arr[j]==arr[i])
+                cnt +=1;
+            }
+          if(cnt>(n/3)){
+              if(res.size()==0 || arr[i]!=res.get(0)){
+                  res.add(arr[i]);
+              }
+          }
+          if(res.size()==2){
+              if(res.get(0)>res.get(1))
+              java.util.Collections.swap(res,0,1);
+              break;
+          }
+        }
+        return res;
+    }
+}
+class Solution {
+    public static BigInteger factorial(int n) {
+        // code here
+        int res[]=new int[500];
+        res[0]=1;
+        int res_size=1;
+        for(int x=2;x<=n;x++){
+            res_size=multiply(x,res,res_size);
+        }
+        for(int i=res_size-1;i>=0;i--){
+            System.out.print(res[i]);
+        }
+    }
+    static int multiply(int x,int res[],int res_size){
+        int carry=0;
+        for(int i=0;i<res_size;i++){
+            int prod=res[i]*X+carry;
+            res[i]=prod%10;
+            carry=prod/10;
+        }
+        while (carry!=0){
+            res[res_size]=carry%10;
+            carry=carry/10;
+            res_size++;
+        }
+        return res_size;
+    }
+    public static void main(String args[]){
+        factorial(100);
+    }
+}
