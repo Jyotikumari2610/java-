@@ -323,3 +323,45 @@ class Solution {
     }
 }
      
+class Solution {
+    public boolean areRotations(String s1, String s2) {
+        // code here
+        int n=s1.length();
+        for(int i=0;i<n;i++){
+            if(s1.equals(s2)){
+                return true;
+            }
+            char last=s1.charAt(s1.length()-1);
+            s1=last+s1.substring(0,s1.length()-1);
+        }
+        return false;
+    }
+    public static void main(String args[]){
+        String s1="abcd";
+        String s2="bcda";
+        Solution obj=new Solution();
+        obj.areRotations(s1,s2);
+    }
+    
+}
+     class Solution {
+    public int minChar(String s) {
+        // code here
+        int n=s.length();
+        for(int i=n-1;i>=0;i--){
+            boolean isPalindrome=true;
+            int left=0;
+            int right=i;
+            for(;left<right;left++,right--){
+                if(s.charAt(left)!=s.charAt(right)){
+                    isPalindrome=false;
+                    break;
+                }
+            }
+            if(isPalindrome){
+            return n-i-1;
+        }
+    }
+    return n-1;
+    }
+}
