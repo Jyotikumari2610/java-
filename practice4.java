@@ -113,6 +113,8 @@ public class  Probability{
         System.out.println("The probability of NOT the event is: " + (1 - prob));
     }
 }
+
+
 import java.util.*;
 public class Practice{
     public static void main(String args[]){
