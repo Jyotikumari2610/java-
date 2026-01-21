@@ -22,7 +22,8 @@ import java.util.*;
          for(int i=0;i<n;i++){
              sum+=i;
              System.out.println("sum:" +sum);
-         }//if printing statement of sum is inside loop then we will able to see each process step by step:)
+         }
+         //if printing statement of sum is inside loop then we will able to see each process step by step:)
           System.out.println("sum:" +sum);
           //if printing statement of sum is outside loop then we will able to see only result not step:)
          */
