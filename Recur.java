@@ -11,8 +11,6 @@ public class FactorialRecursion {
         System.out.println("Factorial of " + number + " is: " + factorial(number));
     }
 }
-
-
 public class Fibonacci {
     public static int fibonacci(int n) {
         if (n == 0) return 0;  
@@ -42,8 +40,6 @@ public class ReverseString {
         System.out.println("Reversed string: " + reverse(word));
     }
 }
-
-
 public class GCDRecursion {
 
     public static int gcd(int a, int b) {
