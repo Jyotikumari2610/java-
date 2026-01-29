@@ -215,3 +215,78 @@ public class Practice{
          
        }
     }
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number:");
+        int n=sc.nextInt();
+      /*  int fact=1;
+        for(int i=1;i<n;i++){
+            fact*=i;
+        }
+        System.out.println(fact);
+        */
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+       /* int even=0;
+        int odd=0;
+        for(int i=0;i<n;i++){
+            if(arr[i] % 2 == 0){
+                even++;
+            }
+            else{
+                odd++;
+            }
+        }
+        System.out.println(even+" "+odd);
+        */
+      /*  int pos=0;
+        int neg=0;
+        for(int i=0;i<n;i++){
+            if(arr[i]>0){
+                pos++;
+            }
+            else{
+                neg++;
+            }
+        }
+        System.out.println(pos+" "+neg);
+        */
+      /*  int evensum=0;
+        int oddsum=0;
+        for(int i=0;i<n;i++){
+            if(arr[i] % 2 == 0){
+                evensum+=arr[i];
+            }
+            else{
+                oddsum+=arr[i];
+            }
+        }
+        System.out.println(evensum+" "+oddsum);
+        */
+      /*  int largest=0;
+        for(int i=0;i<n;i++){
+            if(arr[i]>largest){
+                largest=arr[i];
+            }
+        }
+        System.out.println(largest);
+        */
+        int largest=0;
+        int scndlargest=0;
+        for(int i=0;i<n;i++){
+            if(largest<arr[i]){
+                scndlargest=largest;
+                largest=arr[i];
+            }
+            else if(scndlargest<arr[i] && arr[i]!=largest){
+                scndlargest=arr[i];
+            }
+        }
+        System.out.println(scndlargest);
+    }
+}
