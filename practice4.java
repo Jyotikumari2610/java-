@@ -23,6 +23,7 @@ import java.util.*;
 }
 
 //HCF and LCM of two number
+
 import java.util.*;
 public class Practice{
     public static void main(String args[]){
