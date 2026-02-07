@@ -289,3 +289,47 @@ public class Main {
         System.out.println(scndlargest);
     }
 }
+/*import java.util.*;
+public class Main{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int rev=0;
+    while(n>0){
+        int lastDigit=n%10;
+        rev=rev*10+lastDigit;
+        n=n/10;
+    }
+    if (rev==n){
+        System.out.println("Palindrome");
+    }
+    else {
+        System.out.println("Not a Palindrome");
+    }
+   
+}
+}*/
+import java.util.*;
+class Solution {
+    public boolean isPalindrome(int x) {
+     int original=x;
+     int rev=0;
+      while(x>0){
+        int Ldigit=x%10;
+        rev=rev*10+Ldigit;
+        x=x/10;
+      }    
+    /*   if(rev==x)
+       isPal=true;
+       else
+       isPal=false;
+      }*/
+   return original==rev;
+}
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        Solution obj=new Solution();
+        System.out.println(obj.isPalindrome(x));
+    }
+}
