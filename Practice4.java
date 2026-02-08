@@ -35,6 +35,7 @@ import java.util.*;
          }
          System.out.println(diff);  
          }*/
+      
          System.out.print("Enter a number:");
          int n=sc.nextInt();
          int a=0;
