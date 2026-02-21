@@ -146,7 +146,6 @@ public class Solution{
         int r=sc.nextInt();
         Solution obj=new Solution();
         System.out.println(obj.isPrimeNo(r));
-       
     }
     static boolean isPrimeNo(int r){
         if(r<=1){
